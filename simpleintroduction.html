@@ -22,9 +22,28 @@
       padding: 30px;
       font-size: 20px;
     }
+
     nav ul {
       list-style-type: none;
       padding: 0;
+      background-color: #f1f1f1;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #4166b5;
+      color: yellow;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #b54281;
+      color: yellow;
     }
 
     article {
@@ -48,11 +67,16 @@
       color: white;
       font-size: 20px;
     }
+
     @media only screen and (max-width:840px) {
   /* For mobile phones: */
     nav, article, section {
     width:100%;
     }
+
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+    #customers tr:hover {background-color: #ddd;}
 
 	</style>
 </head>
@@ -64,9 +88,18 @@
 <section>
   <nav>
     <ul>
-      <li><a href="https://yuchun0611.github.io">simple introduction</a></li>
-      <li><a href="school.html">school</a></li>
-      <li><a href="photo.html">photo</a></li>
+      <tr>
+        <th><li><a class="active" href="https://yuchun0611.github.io">simple introduction</a></li></th>
+      </tr>
+       <tr>
+        <th><li><a href="school.html">school</a></li></th>
+      </tr>
+       <tr>
+        <th><li><a href="photo.html">photo</a></li></th>
+      </tr>
+      
+      
+      
     </ul>
   </nav>
   
